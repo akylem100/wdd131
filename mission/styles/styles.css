@@ -1,0 +1,65 @@
+html {
+    height: 100%;
+}
+
+body {
+    padding-top: 50px;
+    height: 100%;
+    width: 100%;
+    border: 1px solid gray;
+
+}
+
+header {
+    padding: 20px 0;
+}
+
+hr {
+    width: 29%
+}
+
+.main_title {
+    margin: 0 auto;
+    padding-top: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    word-spacing: 0.4em;
+    line-height: 2em;
+    
+}
+
+.main_title h1 {
+    font-size: 3.5em;
+}
+
+.main_title h2 {
+    color: #006EB6;
+}
+
+main {
+    width: 35%;
+    margin: 0 auto;
+    font-size: 1.4em;
+    line-height: 1.8em;
+  }
+
+.content {
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.5em;
+    font-size: 1.2em;
+    height: 100%;
+    width: 100%;
+
+}
+
+p, li {
+    text-align: left;
+}
+
+img {
+    line-height: 1.5em;
+    width: 150px;
+    padding-top: 80px
+}
