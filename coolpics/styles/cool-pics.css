@@ -11,14 +11,32 @@
 
 header {
     background-color: #51489C;
-    margin: -38px 0px -10px -10px;
+    margin: -38px -19px -10px -10px;
     padding-bottom: 30px;
+    text-align: center;
 }
 
 body {
     font-family: var(--primary-font);
     font-size: 1.2em;
     background-color: rgb(226, 226, 226);
+}
+
+.navbarelements {
+    display: none;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+}
+
+button {
+    margin: 0 auto;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1.32em;
+    text-align: center;
 }
 
 h1 {
@@ -41,15 +59,19 @@ nav a {
 
 ul {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
     list-style: none;
-    width: 50%;
-    margin: 0 auto;
+    padding: 0;
+
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 img {
-    max-height: 100%;
-    max-width: 100%;
     object-fit: cover;
     border: solid white 10px;
     box-shadow: 3px 3px 8px black;
@@ -58,23 +80,100 @@ img {
 footer {
     background-color: #51489C;
     color: white;
-    padding-left: 300px;
     padding-top: 20px;
     padding-bottom: 20px;
-    margin: -50px -90px 0px -10px;
+    margin: 0 auto;
+    text-align: center;
 }
 
-@media screen and (min-width: 700px) {
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%; 
+    max-width: 450px;
+}
+
+/* Media query for screens between 700px and 1000px */
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        list-style: none;
+        padding: 0;
+    }
+    section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 900px;
+
+    }
+    button {
+        display: none
+    }
+    .navbarelements {
+        display: block;
+    }
+    footer {
+        background-color: #51489C;
+        color: white;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+/* Media query for screens above 1000px */
+@media screen and (min-width: 1000px) {
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        list-style: none;
+        padding: 0;
+    }
+    section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
     .gallery {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 2rem;
-        row-gap: 2rem;
-        margin: 0 0 5em 5em;
-        padding-left: 12em;
-        padding-right: 12em;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1350px;
     }
-  }
+    button {
+        display: none
+    }
+
+    .navbarelements {
+        display: block;
+    }
+
+    footer {
+        background-color: #51489C;
+        color: white;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
 
 
 
