@@ -1,13 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
+
 :root {
     --primary-color: #52489c;
     --secondary-color: #59c3c3;
     --accent-color: #f45b69;
     --text-dark: #333;
     --text-light: #ebebeb;
-    --primary-font: Arial, Helvetica,sans-serif;
-    --secondary-font: Mooli, san-serif;
-    }
+    --primary-font: Arial, Helvetica, sans-serif;
+    --secondary-font: Mooli, sans-serif;
+}
 
 header {
     background-color: #51489C;
@@ -20,6 +21,36 @@ body {
     font-family: var(--primary-font);
     font-size: 1.2em;
     background-color: rgb(226, 226, 226);
+}
+
+.viewer {
+    display: grid;
+    place-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 1000;
+}
+
+.viewer img {
+    max-height: 80%;
+    max-width: 80%;
+    border: none;
+}
+
+.close-viewer {
+    position: absolute;
+    top: 180px;
+    right: 20px;
+    background: transparent;
+    color: white;
+    font-size: 1.5em;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
 }
 
 .navbarelements {
@@ -63,7 +94,6 @@ ul {
     justify-content: center;
     list-style: none;
     padding: 0;
-
 }
 
 section {
@@ -92,44 +122,46 @@ footer {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    width: 100%; 
+    width: 100%;
     max-width: 450px;
 }
 
 /* Media query for screens between 700px and 1000px */
 @media screen and (min-width: 700px) and (max-width: 1000px) {
-    ul {
+    .viewer {
+        padding: 80px;
+    }
+    .close-viewer {
         display: flex;
+        position: absolute;
+        top: 140px;
+        right: 100px;
+        margin: 0 auto;
+        border: none;
+        cursor: pointer;
+        z-index: 1001;
+        background: transparent;
+        color: white;
+        font-size: 1.5em;
+    }
+    ul {
         flex-direction: row;
         justify-content: space-around;
-        list-style: none;
-        padding: 0;
     }
     section {
-        display: grid;
         grid-template-columns: 1fr 1fr;
     }
     .gallery {
-        display: grid;
         grid-template-columns: 1fr 1fr;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-        width: 100%;
         max-width: 900px;
-
     }
     button {
-        display: none
+        display: none;
     }
     .navbarelements {
         display: block;
     }
     footer {
-        background-color: #51489C;
-        color: white;
-        margin: 0 auto;
-        text-align: center;
         padding-top: 20px;
         padding-bottom: 20px;
     }
@@ -137,44 +169,41 @@ footer {
 
 /* Media query for screens above 1000px */
 @media screen and (min-width: 1000px) {
-    ul {
+    .viewer {
+        padding: 80px;
+    }
+    .close-viewer {
         display: flex;
+        position: absolute;
+        top: 80px;
+        right: 40px;
+        margin: 0 auto;
+        border: none;
+        cursor: pointer;
+        z-index: 1001;
+        background: transparent;
+        color: white;
+        font-size: 1.5em;
+    }
+    ul {
         flex-direction: row;
         justify-content: space-around;
-        list-style: none;
-        padding: 0;
     }
     section {
-        display: grid;
         grid-template-columns: 1fr 1fr;
     }
     .gallery {
-        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-        width: 100%;
         max-width: 1350px;
     }
     button {
-        display: none
+        display: none;
     }
-
     .navbarelements {
         display: block;
     }
-
     footer {
-        background-color: #51489C;
-        color: white;
-        margin: 0 auto;
-        text-align: center;
         padding-top: 20px;
         padding-bottom: 20px;
     }
 }
-
-
-
-
