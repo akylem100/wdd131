@@ -29,6 +29,22 @@ const articles2 = [
   }
 ];
 
+const articles3 = [
+  {
+    id: 3,
+    title: "Belgariad Book One: Pawn of Prophecy",
+    date: "Feb 12, 2022",
+    description:
+    "A fierce dispute among the Gods and the theft of a powerful Orb leaves the World divided into five kingdoms. Young Garion, with his 'Aunt Pol' and an elderly man calling himself Wolf --a father and daughter granted near-immortality by one of the Gods -- set out on a complex mission.",
+    imgSrc:
+    "https://images-na.ssl-images-amazon.com/images/I/41ZxXA+nInL.jpg",
+    imgAlt: "Book cover for Pawn of Prophecy",
+    ages: "12-16",
+    genre: "Fantasy",
+    stars: "⭐⭐⭐⭐⭐"
+    }
+]
+
 const articlesContainer = document.querySelector('.articles-container');
 
 const createArticleElement = (article) => {
@@ -54,23 +70,34 @@ articles2.forEach(article => {
   articlesContainer.appendChild(articleElement);
 });
 
+articles3.forEach(article => {
+  const articleElement = createArticleElement(article);
+  articlesContainer.appendChild(articleElement);
+});
+
 const createElement = (article) => {
   const category1element = document.createElement('section');
   category1element.classList.add('category1');
 
   category1element.innerHTML = `
     <div class="info">
-      <p>Published: ${articles1[0].date}</p>
-      <p>Ages: ${articles1[0].ages}</p>
-      <p>Genre: ${articles1[0].genre}</p>
-      <p>Rating: ${articles1[0].stars}</p>
+      <p class="date">${articles1[0].date}</p>
+      <p>${articles1[0].ages}</p>
+      <p>${articles1[0].genre}</p>
+      <p>${articles1[0].stars}</p>
     </div>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
     <div class="info2">
-      <p>Published: ${article.date}</p>
-      <p>Ages: ${article.ages}</p>
-      <p>Genre: ${article.genre}</p>
-      <p>Rating: ${article.stars}</p>
+      <p class="date">${article.date}</p>
+      <p>${article.ages}</p>
+      <p>${article.genre}</p>
+      <p>${article.stars}</p>
+    </div>
+    <div class="info3">
+      <p class="date">${articles3[0].date}</p>
+      <p>${articles3[0].ages}</p>
+      <p>${articles3[0].genre}</p>
+      <p>${articles3[0].stars}</p>
     </div>
   `;
 
@@ -86,10 +113,10 @@ category1Container.appendChild(category1Element);
 
 const createCategory3Element = () => {
   const category3element = document.createElement('section');
-  category3element.classList.add('category3');
+  category3element.classList.add('category30');
 
   category3element.innerHTML = `
-    <p>Filters will go here.</p>
+    <p class="category3text">Filters will go here.</p>
   `;
 
   return category3element;
