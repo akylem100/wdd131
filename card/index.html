@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="card.css">
+</head>
+<body>
+    <form action="" id="form">
+        <div class="card-front">
+            <label for="Total" id="total">TOTAL: $199</label>
+            <img class="card-image" src="https://cdn-icons-png.flaticon.com/512/2695/2695971.png" height="50px;" alt="creditcardicon">
+            <Label for="CardNumber" class="card-number">CARD NUMBER </Label>
+            <input type="text" placeholder="1234 5678 9101 1020" class="card-number" id="CardNumber" name="CardNumber" required>
+            <Label for="cardHolder" class="card-holder">CARD HOLDER </Label>
+            <input type="text" placeholder="John Doe" id="cardHolder" name="cardHolder" required>
+            <Label for="Expiration" class="expiration">EXPIRATION </Label>
+            <div class="exp">
+                
+                <input type="text" placeholder="MM" id="ExpirationMM" name="ExpirationM" required>
+                <input type="text" placeholder="YY" id="ExpirationYY" name="ExpirationY" required>
+            </div>
+        </div>
+        <div class="card-back">
+            <p class="placeholder"></p>
+            <div class="placeholder">
+
+            </div>
+            <div class="cvc-box">
+                <label for="cvc/cvv">CVC/CVV </label>
+                <input type="text" placeholder="XXX" id="cvc" name="cvc/cvv">
+            </div>
+        </div>
+        <button type="submit" id="submit">Submit</button>
+    </form>
+    <script src="card.js"></script>
+</body>
+</html>

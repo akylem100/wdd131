@@ -1,0 +1,129 @@
+#form {
+    position: fixed;
+    width: 500px;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card-front {
+    position: absolute;
+    display: grid;
+    width: 450px;
+    height: 250px;
+    grid-template-columns: 2fr 1fr;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.card-back {
+    z-index: -1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: absolute;
+    bottom: 160px;
+    left: 160px;
+    width: 450px;
+    height: 250px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#total {
+    position: absolute;
+    top: 40px;
+    left: 20px;
+}
+
+.card-image {
+    position: relative;
+    left: 360px;
+    top: 10px;
+}
+
+.cvc-box {
+    position: absolute;
+    bottom: 80px;
+    right: 60px;
+    width: 60px;
+}
+
+#cvc {
+    position: absolute;
+    left: -5px;
+    width: 100%;
+}
+
+.exp {
+    display: flex;
+}
+
+.card-number{
+    position: relative;
+    top: 30px;
+    left: 5px;
+    grid-column: 1/3;
+}
+
+#CardNumber {
+    position: relative;
+    top: 5px;
+    left: -0.5px;
+}
+
+.card-holder{
+    position: absolute;
+    bottom: 65px;
+    left: 15px;
+}
+
+#cardHolder {
+    position: relative;
+    top: 10px;
+}
+
+.expiration{
+    position: absolute;
+    right: 61px;
+    bottom: 63px;
+}
+
+#ExpirationMM {
+    position: relative;
+    top: 10px;
+}
+
+#ExpirationYY {
+    position: relative;
+    top: 10px;
+}
+
+.placeholder {
+    position: relative;
+    top: 10px;
+    margin-top: 10px;
+    background-color: black;
+    height: 40px;
+    width: 100%;
+}
+
+#submit {
+    z-index: 1;
+    position: absolute;
+    left: 494px;   
+    bottom: 100px;
+    height: 30px;
+    width: 80px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+input {
+    margin: 5px;
+    width: 90%;
+    height: 1.5em;
+}
