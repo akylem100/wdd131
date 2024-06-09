@@ -58,6 +58,14 @@
     width: 100%;
 }
 
+#cvctext {
+    height: 30px;
+    width: 100%;
+    position: relative;
+    bottom: 20px;
+    
+}
+
 .exp {
     display: flex;
 }
