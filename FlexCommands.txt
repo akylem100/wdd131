@@ -1,0 +1,10 @@
+order: (...-1, 0, 1...)
+justify-content: flex-start (default), flex-end, center, space-between, space-around, 
+space-evenly
+align-items: flex-start, flex-end, center, baseline, stretch (default)
+align-self: flex-start, flex-end, center, baseline, stretch
+align-content: flex-start, flex-end, center, space-between, space-around, space-evenly,
+stretch (default)
+flex-direction: row (default), row-reverse, column, column-reverse
+flex-wrap: nowrap (default), wrap, wrap-reverse
+flex-flow: combined syntax of direction and wrap (above)

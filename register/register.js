@@ -21,6 +21,7 @@ form.addEventListener('submit', (event) => {
   const feeInputs = document.querySelectorAll('input[type="number"][name="fee"]');
   for (const feeInput of feeInputs) {
     totalFees += parseFloat(feeInput.value);
+  form.style.display = 'none';
   }
 
   const adultName = document.getElementById('adult_name').value;

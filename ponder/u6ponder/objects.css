@@ -1,0 +1,21 @@
+article {
+    border: 1px solid black;
+    margin: 20px;
+}
+
+img {
+    width: 450px;
+}
+
+body {
+    text-align: center;
+}
+
+div {
+    margin: 10px;
+}
+
+label {
+    display: inline-block;
+    width: 90px;
+}
