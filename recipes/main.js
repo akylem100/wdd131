@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     recipes.forEach(recipe => {
-        console.log('Creating recipe element for:', recipe.name);
+        console.log('Creating recipe element for: ', recipe.name);
         const recipeElement = createRecipeElement(recipe);
         recipesContainer.appendChild(recipeElement);
     });
