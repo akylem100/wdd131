@@ -1,0 +1,367 @@
+:root {
+    --primary-color: #FA452F;
+    --secondary-color: #26578D;
+    --accent1-color: #FFF9EC;
+    --accent2-color: #FFFE9D;
+    --nav-link-color: black;
+    --nav-background-color: var(--accent1-color);
+    --nav-hover-link-color: white;
+    --nav-hover-background-color: var(--primary-color);
+    --text-dark: #333;
+    --text-light: #ebebeb;
+    --heading-font: "Oswald";
+    --paragraph-font: "Raleway";
+}
+
+body {
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+#logo1 {
+    max-width: 100px;
+    padding: 0;
+    margin-bottom: -50px;
+}
+
+#logo2 {
+    padding: 0;
+    max-width: 300px;
+    margin-top: -80px;
+    margin-bottom: -100px;
+}
+
+button {
+    margin: 0 auto;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    max-width: 100px;
+    text-align: center;
+}
+
+#logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+
+header {
+    width: 100%;
+    background-color: var(--nav-background-color);
+}
+
+
+.state-list a {
+    margin: 0 auto;
+    color: black;
+    text-decoration: none;
+}
+
+.state-list a:hover {
+    color: var(--primary-color);
+}
+
+.navibar {
+    background-color: var(--nav-background-color);
+    line-height: 2.5em;
+    text-align: center;
+    font-size: 1.2em;
+    list-style-type: none;
+    justify-content: center;
+    width: 100%;
+    display: none;
+    margin-top: -25px;
+}
+
+.navibar a {
+    min-width: 120px;
+    text-decoration: none;
+    padding: 10px;
+    font-family: var(--paragraph-font);
+}
+
+.navibar a:link, footer a:link,
+.navibar a:visited, footer a:visited {
+    color: var(--nav-link-color);
+}
+
+.navibar a:hover, footer a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+footer {
+    background-color: var(--nav-background-color);
+    line-height: 2.5em;
+    text-align: center;
+    font-size: 1.2em;
+    list-style-type: none;
+    justify-content: center;
+    width: 100%;
+    display: inline;
+    flex-direction: row;
+}
+
+footer a {
+    padding: 1em;
+    min-width: 120px;
+    text-decoration: none;
+    padding: 10px;
+    font-family: var(--paragraph-font);
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+#quotecontainer {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background-color: #e8fefffb;
+}
+
+#quotecontainer h2 {
+    max-width: 260px;
+}
+
+h1 {
+    font-family: var(--heading-font);
+    font-weight: 600;
+    font-size: 2.5em;
+    color: var(--primary-color);
+}
+
+h2 {
+    font-family: var(--heading-font);
+    font-weight: 400;
+    font-size: 2.0em;
+    color: Black;
+}
+
+h3 {
+    font-family: var(--heading-font);
+    font-weight: 400;
+    font-size: 1.5em;
+    color: Black;
+    max-width: 55%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+main p {
+    font-size: 1.4em;
+}
+
+p {
+    font-family: var(--paragraph-font);
+}
+
+.p-about {
+    font-weight: 500;
+    max-width: 350px;
+    margin: 0 auto;
+    line-height: 1.3em;
+}
+
+#contact-container {
+    line-height: 2.5em;
+}
+
+#azbody {
+    background-color: #ffb6c180;
+}
+
+#wabody {
+    background-color: #b6ffb680;
+}
+
+#idbody {
+    background-color: #9fc6ff80;
+}
+
+#utbody {
+    background-color: #fffab680;
+}
+
+.image-gallery {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin: 10px auto;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    border: 5px solid rgba(255, 255, 255, 0.384);
+    transition: opacity 1s ease-in-out;
+}
+
+.prev {
+    margin-top: 60px;
+    font-size: 1.5em;
+    border:black 2px solid;
+    margin-right: 20px;
+}
+
+.next {
+    font-size: 1.5em;
+    border:black 2px solid;
+    margin-left: 20px;
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    width: 90%;
+}
+
+.text-overlay h2 {
+    color: rgba(255, 255, 255, 0.795);
+    font-size: 1.5em;
+    text-shadow: 1px 1px 2px  #000000;
+}
+
+.text-overlay p {
+    color: rgba(255, 255, 255, 0.884);
+    font-size: 1.2em;
+    text-shadow: 1px 1px 2px  #000000;
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 2.5em;
+    }
+
+    h3 {
+        font-size: 2em;
+    }
+
+    main p {
+        font-size: 1.6em;
+    }
+
+    .image-gallery {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .image-container img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 3.5em;
+    }
+
+    h2 {
+        font-size: 3em;
+        min-width: 500px;
+    }
+
+    h3 {
+        font-size: 2.5em;
+        width: 80%;
+    }
+
+    main p {
+        font-size: 1.8em;
+        min-width: 600px;
+    }
+
+    .image-gallery {
+        position: relative;
+        min-width: 800px;
+        max-width: 1000px;
+        margin: 10px auto;
+    }
+    
+    .image-container {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .image-container img {
+        width: 100%;
+        height: 100%;
+        border: 5px solid rgba(255, 255, 255, 0.384);
+        transition: opacity 1s ease-in-out;
+    }
+
+    .text-overlay {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: white;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.3);
+        padding: 10px;
+        width: 90%;
+    }
+    
+    .text-overlay h2 {
+        text-align: center;
+        color: rgba(255, 255, 255, 0.795);
+        font-size: 2.5em;
+        text-shadow: 1px 1px 2px  #000000;
+    }
+    
+    .text-overlay p {
+        color: rgba(255, 255, 255, 0.884);
+        font-size: 1.2em;
+        text-shadow: 1px 1px 2px  #000000;
+        width: 200px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .state-list {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}

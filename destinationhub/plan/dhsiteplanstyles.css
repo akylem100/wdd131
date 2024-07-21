@@ -4,6 +4,10 @@ Fonts are separated by a | */
 @import url("https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato");
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
+* {
+  text-align: center;
+}
+
 :root {
   /* change the values below to your colors from your palette */
   --primary-color: #FA452F;

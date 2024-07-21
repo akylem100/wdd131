@@ -6,49 +6,40 @@
     <title>Destination Hub ✈️</title>
     <link rel="stylesheet" href="styles/dhstyles.css">
 </head>
-<body>
+<body id="azbody" data-state="arizona" data-scroll="auto">
     <header>
         <div id="logo-container">
-            <a href=dhindex.html>
+            <a id="logo-link" href="dhindex.html">
                 <img src="images/destination_hub_rm.png" id="logo1" alt="Destination Hub Logo">
             </a>
             <img src="images/logo_black.png" id="logo2" alt="Destination Hub Logo">
         </div>
         <button id="threebars">
-            <img src="images/threebars.png" alt="threebars" id="threebars" width="60px">
+            <img src="images/threebars.png" alt="threebars" width="60px">
         </button>
-        </header>
+    </header>
     <nav class="navibar">
         <ul>
+            <li><a href="dhindex.html">Home</a></li>
             <li><a href="dhrandomdestination.html">Random Destination</a></li>
             <li><a href="dhaboutus.html">About Us/Contact Us</a></li>
         </ul>
     </nav>
     <main>
-        <h1> We'll guide you to ideas.</h1>
-        <h2> Where to?</h2>
-        <br>
-        <div class="state-list">
-            <a href="dharizona.html">
-            <p>Arizona</p>
-            </a>
-            <a href="dhwashington.html">
-            <p>Washington</p>
-            </a>
-            <a href="dhidaho.html">
-            <p>Idaho</p>
-            </a>
-            <a href="dhutah.html">
-            <p>Utah</p>
-            </a>
+        <h1>Arizona</h1>
+        <div class="image-gallery">
+            <div class="image-container">
+                <img id="gallery-image" src="images/az-1.jpeg" alt="Arizona">
+                <div class="text-overlay">
+                    <h2 id="image-headline">Headline 1 Test</h2>
+                    <p id="image-description">Description for Image 1</p>
+                </div>
+            </div>
+            <button class="prev" onclick="prevImage()">&#10094;</button>
+            <button class="next" onclick="nextImage()">&#10095;</button>
         </div>
-        <div id="quotecontainer">
-            <img src="images/quoteimage.jpeg" alt="Destination Hub Logo" width="70%" style=opacity:70%>
-            <h2>"Better to see something once than to hear about it a thousand times."</h2>
-            <p>- Asian Proverb</p>
-        </div>
-        <h3>We're committed to help you make the most out of your trip with our carefully picked tourist destinations, where you choose.</h3>
     </main>
+    <br><br><br><br><br><br><br>
     <footer>
         <nav>
             <ul>
