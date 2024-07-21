@@ -80,10 +80,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     showImage(currentIndex);
 
-    // function scrollToBottom() {
-    //     window.scrollTo(10, document.body.scrollHeight);
-    // }
-
     window.prevImage = function() {
         currentIndex = (currentIndex - 1 + images.length) % images.length;
         showImage(currentIndex);
